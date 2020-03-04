@@ -90,7 +90,8 @@ Check_Root()
 
 		if [[ ! $(whoami) == "root" && $environment == "system" ]]; then
 			root_check="failed"
-			echo -e $(date "+%b %m %H:%M:%S") ${text_error}"- Root permissions check failed."${erase_style}
+			echo -e $(date "+%b %m %H:%M:%S") ${text_error}"- Root permissions check failed. Please run with sudo!"${erase_style}
+			exit 1
 		fi
 
 	fi
