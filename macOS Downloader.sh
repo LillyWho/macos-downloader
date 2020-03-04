@@ -184,6 +184,18 @@ Check_Internet()
 	fi
 }
 
+Get_PDX()
+
+{
+
+
+	curl -s https://github.com/rmc-team/macos-downloader/raw/master/resources/pbzx -O /tmp/pbzx
+	chmmod +x /tmp/pbzx
+}
+
+	
+
+
 Input_Folder()
 {
 	echo -e $(date "+%b %m %H:%M:%S") ${text_message}"/ What save folder would you like to use?"${erase_style}
