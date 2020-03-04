@@ -581,6 +581,7 @@ End()
 	echo -e $(date "+%b %m %H:%M:%S") ${text_progress}"> Removing temporary files."${erase_style}
 
 		Output_Off rm /tmp/Catalog.sh
+		rm /tmp/pbzx
 
 		if [[ "$installer_prepare" == "2" ]]; then
 			Output_Off rm -R /tmp/"${!installer_name}"
