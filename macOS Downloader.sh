@@ -413,7 +413,7 @@ Prepare_Installer()
 	
 		if [[ ! "$InstallAssistantAuto_pkg" == "2" ]]; then
 			chmod +x "$resources_path"/pbzx
-			"$resources_path"/pbzx /tmp/"${!installer_name}"/InstallAssistantAuto.pkg | Output_Off cpio -i
+			/tmp/pbzx /tmp/"${!installer_name}"/InstallAssistantAuto.pkg | Output_Off cpio -i
 			echo -e "InstallAssistantAuto_pkg=\"2\"" >> /tmp/"${!installer_name}"/Catalog.sh
 		fi
 
