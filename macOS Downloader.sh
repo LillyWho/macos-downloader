@@ -184,7 +184,7 @@ Check_Internet()
 	fi
 }
 
-Get_PDX()
+Get_PBZX()
 
 {
 
